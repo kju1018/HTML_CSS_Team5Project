@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+   
+   *{
+        margin: 0;
+        padding: 0;
+    }
+    .navul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: white;
+    }
+    .navli {
+        float: left;
+        margin-right: 4em;
+    }
+    .header_a{
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    .imgsize {
+        width: 200px;
+        height: 200px;
+    }
+    .img-thumbnail {
+        width: 150px;
+        height: 150px;
+    }
+    .aft::after {
+        content : ">";
+    }
+  
+    header {
+      background-color: white;
+     
+        position : fixed;
+        left : 0;
+        top :0;
+        width: 100%;
+        z-index:4;
+    }
+    
+    .footer{
+        
+        bottom:0;
+        margin-top: 1em;
+        width: 100%;
+        height: 100px;
+        background-color: red;
+        text-align: center;
+    }
+    </style>
+</head>
+<header >
+    <!----header-->
+    <div class="columns">
+        <div class="row align-items-center" >
+            <!----search-->
+            <div class="col-3" > 
+                <div class="row align-items-center" >
+                    
+                        <div class="col"style="text-align: end; margin: 0 auto; ">
+                            <input type="text" style=" text-align: center;">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </div>
+                      
+                </div>
+            </div>
+            <!----search-->
+            <!---logo-->
+            <div class="col-6"> 
+                <div class="row align-items-end text-center">
+                    <div class="col align-self-center" >
+                        <a href="#"><img  src="logo.png" alt="" height="130"></a>
+                    </div>
+                </div>
+            </div>
+            <!---logo-->
+            <!-----auth info-->
+            <div class="col-3"> 
+                <div class="row align-items-end" style="padding-top: 0.6em;" >
+                    <div class="col" >
+                        <a href="#" style="font-size: xx-small;text-decoration: none; color: black;">SignIn</a>
+                    </div>
+                    <div class="col"  >
+                        <a href="#" style="font-size: xx-small;text-decoration: none; color: black;">SignUp</a>
+                    </div>
+                    <div class="col"  >
+                        <a href="#" style="font-size:xx-small;text-decoration: none; color: black;">MyPage</a>
+                    </div>
+                    <div class="col" >
+                        <a href="#" style="font-size:xx-small; text-decoration: none; color: black;">Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---auth info-->
+        <!-----category text-->
+        <div class="col" style=" text-align: center; ; border-bottom: 1px solid black; padding-top: 1em; margin-top: 1em;">
+            <ul class="navul" style="display: inline-block;">
+                <li class="navli" ><a class=" header_a" style="text-decoration: none; color: black;" href="#home">AboutUs</a></li>
+                <li class="navli" ><a class=" header_a" style="text-decoration: none; color: black;" href="#news">인테리어조명</a></li>
+                <li class="navli" ><a class=" header_a" style="text-decoration: none; color: black;" href="#contact">디퓨져/캔들</a></li>
+                <li class="navli" ><a class=" header_a" style="text-decoration: none; color: black;" href="#about">액자</a></li>
+                <li class="navli" ><a class=" header_a" style="text-decoration: none; color: black;" href="#about">조화/화병</a></li>
+                <li class="navli" ><a class=" header_a" style="text-decoration: none; color: black;" href="#about">커뮤니티</a></li>
+            </ul>
+        </div>
+        <!-----category text-->
+    </div>
+    <!----header-->
+</header>
+<body>
+    <div class="container" style="margin-top: 18em;" >
+        <form action="">
+            <div class="col-lg" style=" text-align: center;"><h3>회원가입</h3></div>
+            <div class="col-lg" style=" text-align: start;"><h3>기본정보</h3></div>
+            <div class="container"style = "border: 1px solid gray; margin-bottom: 3em;" >
+                <div class="row align-items-center " style=" border-bottom: 1px solid gray;" >
+                    <div class="col-2"  >
+                        <label class="form-label" for="id" style="padding-top:0.3em;">아이디</label>
+                    </div>
+                    <div class="col-10"style="border-left: 1px solid gray; ">
+                        <div class="row align-items-center">
+                            <div class="col-4">
+                                <input type="text">
+                            </div>
+                            <div class="col-8">
+                                <span style="font-size: small;">(영문소문자/숫자, 4 ~ 16자)</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            
+                <div class="row align-items-center " style=" border-bottom: 1px solid gray;" >
+                    <div class="col-2" >
+                        <label class="form-label" for="id" style="padding-top:0.3em;">비밀번호</label>
+                    </div>
+                    <div class="col-10" style="border-left: 1px solid gray;" >
+                        <div class="row align-items-center">
+                            <div class="col-4" style="margin-right: 1em;">
+                                <input type="text" style="height: 2em; width: 100%;">
+                            </div>
+                            <div class="col">
+                                <span style="font-size: small;">(영문대소문자/특수문자 중 2가지 이상 조합, 10 ~ 16자)</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="row align-items-center " style=" border-bottom: 1px solid gray;" >
+                    <div class="col-2"  >
+                        <label class="form-label" for="id" style="padding-top:0.3em;">비밀번호 확인</label>
+                    </div>
+                    <div class="col-6" style="border-left: 1px solid gray;">
+                        <input type="text" style="height: 2em; width: 20em;">
+                    </div>
+                </div>
+                <div class="row align-items-center "  style=" border-bottom: 1px solid gray;" >
+                    <div class="col-2"  >
+                        <label class="form-label" for="id" style="padding-top:0.3em;">이름</label>
+                    </div>
+                    <div class="col-6"style="border-left: 1px solid gray;">
+                        <input type="text" style="height: 2em; width: 20em;">
+                    </div>
+                </div>
+                <div class="row align-items-center " style=" border-bottom: 1px solid gray; " >
+                    <div class="col-2"  >주소</div>
+                    <div class="col-6" style="border-left: 1px solid gray;">
+                        <div class="row align-items-center" style="margin-top: 0.2em;">
+                            <div class="col-4">
+                                <input type="text" style="height: 2em; width: 10em;">
+                            </div>
+                            <div class="col-1">
+                                <a href="#" class="btn btn-outline-dark btn-sm">우편번호</a>
+                            </div>
+                        </div>
+                        <div class="row align-items-center" style="margin-top: 0.2em;">
+                            <div class="col-7">
+                                <input type="text" style="height: 2em; width: 20em;">
+                            </div>
+                            <div class="col-4">
+                               <span style="font-size: small;">기본주소</span>
+                            </div>
+                        </div>
+                        <div class="row align-items-center" style="margin-top: 0.2em; margin-bottom: 0.2em; ">
+                            <div class="col-7">
+                                <input type="text" style="height: 2em; width: 20em;">
+                            </div>
+                            <div class="col-4">
+                               <span style="font-size: small;">나머지 주소(선택입력가능)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center" style=" border-bottom: 1px solid gray;" >
+                    <div class="col-2" >전화번호</div>
+                    <div class="col-1" style="border-left: 1px solid gray; ">
+                        <select id="inputState" class="form-select" style="height: 2em; width: 4.4em;margin-top: 0.2em; margin-bottom: 0.2em;">
+                            <option selected>010</option>
+                            <option>011</option>
+                            <option>02</option>
+                          </select>
+                    </div>
+                    <span style="margin-left: 0.2em;">-</span>
+                    <div class="col-1" style="margin-right: 1.5em;">
+                        <input type="text" style="height: 2em; width: 6em;">
+                    </div>
+                    <span style="margin-left: 0.2em;">-</span>
+                    <div class="col-1" >
+                        <input type="text" style="height: 2em; width: 6em;">
+                    </div>
+                </div>
+                <div class="row align-items-center" style=" border-bottom: 1px solid gray;" >
+                    <div class="col-2"  >
+                        <label class="form-label" for="id" style="padding-top:0.3em;">이메일</label>
+                    </div>
+                    <div class="col-6"style="border-left: 1px solid gray;">
+                        <input type="email" style="height: 2em; width: 20em; margin-top: 0.2em; margin-bottom: 0.2em;">
+                    </div>
+                </div>
+                <div class="row align-items-center"  >
+                    <div class="col-2" >생년월일</div>
+                    <div class="col-1" style="border-left: 1px solid gray; margin:0.2em  0.3em 0.2em 0; ">
+                        <input type="text" style="height: 2em; width: 5em;">
+                    </div>
+                    <span style="margin-left: 0.2em;">년</span>
+                    <div class="col-1" >
+                        <input type="text" style="height: 2em; width: 4.9em;">
+                    </div>
+                    <span style="margin-left: 0.2em;">월</span>
+                    <div class="col-1" >
+                        <input type="text" style="height: 2em; width: 4.9em;">
+                    </div>
+                    <span style="margin-left: 0.2em; margin-right: 1em;">일</span>
+                    <div class="col" >
+                        <div class="row ">
+                            <div class="col-5" >
+                                <div class="row align-items-center">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" id="inlineCheckbox1" value="option1">
+                                        <label class="form-check-label" for="inlineCheckbox1">양력</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" id="inlineCheckbox2" value="option2">
+                                        <label class="form-check-label" for="inlineCheckbox2">음력</label>
+                                      </div>
+                                </div>
+                                
+                            </div>
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg" style=" text-align: start;"><h3>전체동의</h3></div>
+            <div class="container" style = "border: 1px solid black;" >
+                <div class="row" style=" border-bottom: 1px solid black;" >
+                    <div class="col">아이디</div>
+                </div>
+                <div class="row" style=" border-bottom: 1px solid black;" >
+                    <div class="col">아이디</div>
+                </div>
+                <div class="row" style=" border-bottom: 1px solid black;" >
+                    <div class="col">아이디</div>
+                    
+                </div>
+                <div class="row" >
+                    <div class="col">아이디</div>
+                    
+                </div>
+            </div>
+            <div class="col" style="text-align: center; margin-top: 3em;">
+                <button class="btn btn-lg btn-dark">회원가입</button>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
