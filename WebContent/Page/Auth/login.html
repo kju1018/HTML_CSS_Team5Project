@@ -17,6 +17,13 @@
             const header = $("#head_import");
             header.html(data);
         })
+
+        $.ajax({url: "../Fragment/foot.html"})
+        .done((data) => {
+            const footer = $("#footer_import");
+            footer.html(data);
+        })
+ 
  
      </script>
     <style>
@@ -100,19 +107,19 @@
                                   <input size="30" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                                 </div>
                                 <div class="col-lg" >
-                                    <button class="btn btn-dark btn-lg btn-block">로그인</button>
+                                    <a href="/WebContent/Page/Auth/sign_complete.html"type="submit"class="btn btn-dark btn-lg btn-block">로그인</a>
                                 </div>  
                               </form>
                         </div>
                         <div class="row justify-content-center" style="margin-top: 0.5em;">
                             <div class="col-4">
-                                <a href="#"><span style="text-decoration: none; color: black;">아이디 찾기 |</span></a>
-                                <a href="#"><span style="text-decoration: none; color: black;">비밀번호 찾기</span></a>
+                                <a href="/WebContent/Page/Auth/findid.html"><span style="text-decoration: none; color: black;">아이디 찾기 |</span></a>
+                                <a href="/WebContent/Page/Auth/findpw.html"><span style="text-decoration: none; color: black;">비밀번호 찾기</span></a>
                             </div>
                         </div>
                         <div class="row justify-content-center" style="margin: 0.5em 0 2em 0;">
                             <div class="col-6"  >
-                                <button class="btn btn-secondary btn-lg btn-block">회원가입</button>
+                                <a href="/WebContent/Page/Auth/sign_up.html"type="submit" class="btn btn-outline-dark btn-lg btn-block">회원가입</a>
                             </div>
                         </div>   
                      </div>
@@ -121,4 +128,7 @@
     </div>
     
 </body>
+<footer id="footer_import">
+
+</footer>
 </html>
