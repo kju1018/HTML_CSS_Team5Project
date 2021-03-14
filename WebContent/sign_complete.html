@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+    
     <meta charset="UTF-8">
     <title>Sign Complete</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -13,7 +14,7 @@
     <script>
      
 
-       $.ajax({url: "../Fragment/header.html"})
+       $.ajax({url: "header/header.html"})
        .done((data) => {
            const header = $("#head_import");
            header.html(data);
@@ -87,14 +88,14 @@
                     <div class="container" style="border: 1px solid black; padding-bottom: 0.5em;">
                         <div class="row ">
                             <div class=" container-fluid"style="margin-bottom: 0.5em; background-color: lightgray; padding:0.7em; border-bottom:1px solid black">
-                                <img src="../../common/image/alert_sihyun.svg" alt="">
+                                <img src="common/image/alert_sihyun.svg" alt="">
                                 <span class="align-middle"style="font-size :x-large;">저희 쇼핑몰을 이용해 주셔서 감사합니다.</span>
                             </div>
                             <div class="col ">
                                
                                 <div class="row justify-content-start">
                                     <div class="col-2" style="padding-top: 1.7em; margin-right: 0.8em;">
-                                        <img src="../../common/image/user.png" alt="userprofile"width="85">
+                                        <img src="common/image/user.png" alt="userprofile"width="85">
                                     </div>
                                     <div class="col">
                                         <div class="row" style="padding-bottom: 1em;">
