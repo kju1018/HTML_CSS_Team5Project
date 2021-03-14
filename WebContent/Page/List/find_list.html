@@ -9,13 +9,19 @@
         <script src="/WebContent/common/bootstrap-4.6.0/js/bootstrap.min.js"></script>
         <script>
     
-            $.ajax({url : "../Fragment/header.html"})
+    $.ajax({url : "/WebContent/Page/Fragment/header.html"})
             .done((data) => {
                 const header = $("#head_import");
                 header.html(data);
             }).fail((data) => {
                 console.log("에러");
             });
+
+            $.ajax({url: "/WebContent/Page/Fragment/foot.html"})
+            .done((data) => {
+                const footer = $("#footer_import");
+                footer.html(data);
+            })
         
         </script>
 
@@ -342,4 +348,8 @@
   
 		
 </body>
+<footer id="footer_import">
+
+    
+</footer>
 </html>
