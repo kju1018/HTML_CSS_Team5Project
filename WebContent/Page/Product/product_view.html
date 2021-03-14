@@ -129,6 +129,7 @@
 <body>
 <br><br><br><br><br><br><br><br><br><br>
 <!-- style="border:1px solid black" -->
+<!--main photo-->
 <div class="container-fluid">
     <div class="row justify-content-center" >
 	    <div class="col-12" style="width:100%;" id="photo1" >
@@ -139,7 +140,7 @@
                 <img src="/WebContent/common/image/light5_sora.png" style="width:24%; height:100px;">
                 <img src="/WebContent/common/image/light6_sora.png" style="width:23.3%; height:100px;">
             </div><!-- photo2 -->
-
+    <!--product -->
 	<div id="photo_subject" style="float:left; width:35%; margin-left:3%;">
 	<hr style="width:100%; color: black; border:1px solid black;"/>
 	<big>북유럽식 식탁조명</big><br><br>
@@ -147,18 +148,19 @@
     (최소주문수량 1개 이상)<img src="/WebContent/common/image/like_sora.png" style="width:10%; height:10%; margin-left:63%;">
     
     </small>
-	
+	<!--수량 선택-->
     <table style="width:100%; height:80px; border:1px solid lightgray;">
 		<tr>
 			<td><small><img src="/WebContent/common/image/icon_sora.gif"><b>수량을 선택해주세요.</b>
-                <br><br>마켓디자인</small><input type="number" style="width:8%; margin-left:40%;">
+                <br><br>마켓디자인</small><input type="number" value="1" style="width:8%; margin-left:40%;">
                 <small style="margin-left:27%;">50,000원</small></td>
                 
 		</tr>
-	</table>
+	</table> 
+    <!--구매 / 장바구니-->
 	<br><small style="margin-left:73%;">TOTAL:</small>&nbsp;<b>50,000원</b><small>(1개)</small><br><br>
-	<button style="width:100%; background-color:black; color:white; height:50px">BUY IT NOW</button><br><br>
-	<button  style="width:100%;background-color:white; color:black; height:50px">ADD TO CART</button><br><br>
+	<a href="/WebContent/Page/Payment/payment.html" class="btn btn-dark" style="width:100%" role="button">BUY IT NOW</a><br><br>
+	<a href="/WebContent/Page/MyPage/cart.html"  class="btn btn-white btn-outline-dark" style="width:100%" role="button">ADD TO CART</a><br><br>
 		
 	</div>
 	<br><br>
@@ -168,6 +170,7 @@
 	<div >
         <big style="margin-left:12%;">Product Detail</big>
     </div><br>
+    <!--상품 상세 이미지-->
     <div style="height:auto">
         <div style="width:55%; float:left;">
                 <img src="/WebContent/common/image/light7_sora.jpg" style="width:72%; height:25%; margin-left:21%"><br><br>
@@ -175,6 +178,7 @@
                 <img src="/WebContent/common/image/light9_sora.jpg" style="width:72%; height:25%; margin-left:21%"><br><br>
                 <img src="/WebContent/common/image/light10_sora.jpg" style="width:72%; height:25%; margin-left:21%"><br><br>
         </div><br>
+        <!--상품 상세 설명-->
         <div style="width:35%; float:left; text-align: center; margin-right: 10%; height=100%">
                 <div style="margin-top:60%; color:gray;" >
                     <small>
@@ -230,7 +234,7 @@
                             </div>
             </div>
     </div><br>
-
+    <!--제품 리뷰-->
     <div >
         <big style="margin-left:12%;">REVIEW</big>
     </div><br>
@@ -287,6 +291,7 @@
         <a href="#none"><img src="/WebContent/common/image/btn_page_last.gif"></a>
     </div><br><br><br>
 
+    <!--제품 Q&A-->
     <div >
         <big style="margin-left:12%;">Q&A</big>
     </div><br>
@@ -318,7 +323,7 @@
         </div>
         <div style="margin-left: 73%;">
         <a class="btn btn-dark" href="p_qna_write.html" role="button">상품문의하기</a>
-        <a class="btn btn-white btn-outline-dark" href="p_qna_write.html" role="button">목록보기</a>
+        <a class="btn btn-white btn-outline-dark" href="product_view.html" role="button">목록보기</a>
         </div>
 
         <div class="row pageNumberDiv">
