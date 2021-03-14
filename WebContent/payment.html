@@ -13,6 +13,47 @@
         </script>
 
 		<style type="text/css">
+
+             /* header 스타일*/
+             *{
+                margin: 0;
+                padding: 0;
+            }
+            .navul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: white;
+            }
+            .navli {
+                float: left;
+                margin-right: 4em;
+            }
+
+            header {
+                background-color: white;
+                position : fixed;
+                left : 0;
+                top :0;
+                width: 100%;
+                z-index:4;
+            }
+   
+
+            .header_a{
+                display: block;
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                /* padding: 14px 16px 4px 16px; */
+                /*위 오른쪽 아래 왼쪽*/
+                /*위아래 왼쪽오른쪽*/
+                text-decoration: none;
+            }
+            /* header 스타일*/
+
+
            a > div > img{
                max-width: 150px;
            }
@@ -40,31 +81,89 @@
 	</head>
 
 <body>
-    <header include-html="header.html">
+    <header >
+        <!----header-->
+        <div class="columns">
+            <div class="row align-items-center" >
+                <!----search-->
+                <div class="col-3" > 
+                    <div class="row align-items-center" >
+                        
+                            <div class="col"style="text-align: end; margin: 0 auto; ">
+                                <input type="text" style=" text-align: center;">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </div>
+                          
+                    </div>
+                </div>
+                <!----search-->
+                <!---logo-->
+                <div class="col-6"> 
+                    <div class="row align-items-end text-center">
+                        <div class="col align-self-center" >
+                            <a href="#"><img  src="common/image/logo.png" alt="" height="130"></a>
+                        </div>
+                    </div>
+                </div>
+                <!---logo-->
+                <!-----auth info-->
+                <div class="col-3"> 
+                    <div class="row align-items-end" style="padding-top: 0.6em;" >
+                        <div class="col" >
+                            <a href="#" style="font-size: xx-small;text-decoration: none; color: black;">SignIn</a>
+                        </div>
+                        <div class="col"  >
+                            <a href="#" style="font-size: xx-small;text-decoration: none; color: black;">SignUp</a>
+                        </div>
+                        <div class="col"  >
+                            <a href="#" style="font-size:xx-small;text-decoration: none; color: black;">MyPage</a>
+                        </div>
+                        <div class="col" >
+                            <a href="#" style="font-size:xx-small; text-decoration: none; color: black;">Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---auth info-->
+            <!-----category text-->
+            <div class="col" style=" text-align: center; ; border-bottom: 1px solid black; ">
+                <ul class="navul" style="display: inline-block;">
+                    <li class="navli" ><a class=" header_a" style="text-decoration: none; color: black;" href="#home">AboutUs</a></li>
+                    <li class="navli" ><a class=" header_a" style="text-decoration: none; color: black;" href="#news">인테리어조명</a></li>
+                    <li class="navli" ><a class=" header_a" style="text-decoration: none; color: black;" href="#contact">디퓨져/캔들</a></li>
+                    <li class="navli" ><a class=" header_a" style="text-decoration: none; color: black;" href="#about">액자</a></li>
+                    <li class="navli" ><a class=" header_a" style="text-decoration: none; color: black;" href="#about">조화/화병</a></li>
+                    <li class="navli" ><a class=" header_a" style="text-decoration: none; color: black;" href="#about">커뮤니티</a></li>
+                </ul>
+            </div>
+            <!-----category text-->
+        </div>
+        <!----header-->
     </header>
 
-    <div class="container-xl mt-5">
+    <div class="container-xl" style="margin-top: 16em;">
         <h4 class="font-weight-bold border-bottom pb-2">결제하기</h4>
     </div>
-    <div class="container-xl mt-3">
-        <div>
-            <h5 class="border-bottom pb-2">주문상품</h5>
-        </div>
-        <div class="row ml-0 mr-0">
-            <a href="#none">
-                <div>
-                    <img class="productImg" src="/WebContent/common/image/productList/productList_1.jpg">
-                </div>
-            </a>
-            <a href="#none" class="ml-3">
-                <h6>식탁 조명</h6>
-                <p>수량: 1개</p>
-                <p>상품구매금액: 50000원</p>
-            </a>
-        </div>
-
-<!-- 전체 -->
-        <form id="paymentForm">
+    <div class="container-xl mt-3"><!--결재하기 전체 div-->
+        <div><!--주문상품 div-->
+            <div>
+                <h5 class="border-bottom pb-2">주문상품</h5>
+            </div>
+            <div class="row ml-0 mr-0">
+                <a href="#none">
+                    <div>
+                        <img class="productImg" src="/WebContent/common/image/productList/productList_1.jpg">
+                    </div>
+                </a>
+                <a href="#none" class="ml-3">
+                    <h6>식탁 조명</h6>
+                    <p>수량: 1개</p>
+                    <p>상품구매금액: 50000원</p>
+                </a>
+            </div>
+        </div><!--주문상품 div-->
+        <!--form 전체 -->
+        <form id=" paymentForm">
             <div><!-- form안에 div 전체 틀 content-->
                 <div class="border mt-3"><!-- 주소정보-->
                     <div class="border-bottom pl-2 pt-2">
