@@ -131,22 +131,19 @@
                 color: #868e96;
             }
 
-            /* 페이지 숫자를 나타내는곳 div*/
-            .pageNumberDiv {
-                margin-top: 5px;
-                display: block;
+            /* 페이지 이동 버튼 */
+            .pagenav { /* 가운데 정렬 */
+                margin:0px;
+                padding:0px;
                 text-align: center;
+                clear: both;
             }
-
-            .pageNumberDiv > a {
+            .page-item {
                 display: inline-block;
-                text-decoration: none;
-                color: #868e96;
-                margin: 0px 4px;
+                margin: 4px;
             }
-
-            #thisPageNumber {
-                background: #fff;
+            .page-item > a {
+                color: grey;
             }
 
 
@@ -383,16 +380,13 @@
         
     </div>
     
-    <div class="container-xl pt-3" style="clear: both;" ><!-- 페이지 숫자 영역 -->
-        <div class="row pageNumberDiv">
-            <a href="#none"><img src="/WebContent/common/image/btn_page_first.gif"></a> 
-            <a href="#none">PREV</a> 
-            <a href="#none" class="thisPageNumber">1</a>
-            <a href="#none">NEXT</a>
-            <a href="#none"><img src="/WebContent/common/image/btn_page_last.gif"></a>
-        </div>
-    </div><!-- 페이지 숫자 영역 -->
-
+    <ul class="pagenav">
+        <li class="page-item"><img src="/WebContent/common/image/btn_page_first.gif"></li>
+        <li class="page-item"><a href="#">PREV</a></li>
+        <li class="page-item"><a href="#">1</a></li>
+        <li class="page-item"><a href="#">NEXT</a></li>
+        <li class="page-item"><img src="/WebContent/common/image/btn_page_last.gif"></li>
+    </ul>
         
     
     <div class="container-fluid mt-5" >
