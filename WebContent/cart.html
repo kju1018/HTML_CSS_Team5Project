@@ -36,6 +36,14 @@
             list-style: none;
         }
 
+		.btn-sel {
+			width:78px;
+			height: 30px;
+			margin-bottom: 1px;
+			border: 1px solid #bebcbc;
+			background-color: white;
+		}
+
 		/* 페이지 이동 버튼 */
 		.pagenav { /* 가운데 정렬 */
 			margin: 0px;
@@ -216,8 +224,8 @@
 			<th>268000</th>
 			<th>무료</th>
 			<th>
-				<input type="button" class="btn btn-outline-dark btn-sm" value="주문하기">
-				<input type="button" class="btn btn-outline-dark btn-sm" value="삭제">
+				<input type="button" class="btn-sel" value="주문하기">
+				<input type="button" class="btn-sel" value="삭제">
 			</th>
 		</tr>
 		<tr class="cart_list">
@@ -228,8 +236,8 @@
 			<th>10000000</th>
 			<th>무료</th>
 			<th>
-				<input type="button" class="btn btn-outline-dark btn-sm" value="주문하기">
-				<input type="button" class="btn btn-outline-dark btn-sm" value="삭제">
+				<input type="button" class="btn-sel" value="주문하기">
+				<input type="button" class="btn-sel" value="삭제">
 			</th>
 		</tr>
 	</table>
@@ -240,7 +248,7 @@
 	</div>	
 
 	<!-- 페이지 -->
-	<ul class="pagenav">
+	<ul class="pagenav" style="margin-top: 40px;">
 		<li class="page-item"><img src="/WebContent/common/image/btn_page_first.gif"></li>
 		<li class="page-item"><a href="#">PREV</a></li>
 		<li class="page-item"><a href="#">1</a></li>
@@ -249,7 +257,7 @@
 	</ul>
 	<br/>
 
-	<table class="table">
+	<table class="table" style="margin-top: 80px;">
 	<tr>
 		<th width="33%">총 상품금액</th>
 		<th width="33%">총 배송비</th>
@@ -264,7 +272,7 @@
 	
 	<div class="c_bottom">
 		<input type="button" class="btn btn-dark" value="전체상품주문">
-		<input type="button" class="btn btn-dark" value="쇼핑계속하기" onclick="location.href ='메인페이지 url'">
+		<input type="button" class="btn btn-dark" value="쇼핑계속하기" onclick="location.href ='main.html'">
 	</div>
 								
 </div>
