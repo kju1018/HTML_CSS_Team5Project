@@ -13,18 +13,27 @@
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   
-    <script>
+<script>
+    $.ajax({url: "/WebContent/Page/Fragment/header.html"})
+    .done((data) => {
+        const header = $("#head_import");
+        header.html(data);
+    })
+
+    function movePage(data) {
+        location.href = data;
+    }
+    $.ajax({url: "/WebContent/Page/Fragment/foot.html"})
+     .done((data) => {
+         const footer = $("#footer_import");
+         footer.html(data);
+     })
      
+ 
 
-       $.ajax({url: "../Fragment/header.html"})
-       .done((data) => {
-           const header = $("#head_import");
-           header.html(data);
-       })
+ </script>
 
-    </script>
-
-<style>
+<style>   
      *{
         margin: 0;
         padding: 0;
@@ -304,4 +313,7 @@
 <br><br><br><br>
 
 </body>
+<footer id="footer_import">
+
+</footer>
 </html>
