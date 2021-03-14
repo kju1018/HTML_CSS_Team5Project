@@ -16,6 +16,11 @@
             const header = $("#head_import");
             header.html(data);
         })
+        $.ajax({url: "../Fragment/foot.html"})
+        .done((data) => {
+            const footer = $("#footer_import");
+            footer.html(data);
+        })
  
     </script>
 	<style>
@@ -178,4 +183,7 @@
     </div>	
 </div>
 </body>
+<footer id="footer_import">
+
+</footer>
 </html>
