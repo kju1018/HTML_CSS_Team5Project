@@ -2,7 +2,7 @@
 <html>
 <head>
 		<meta charset="UTF-8">
-		<title>Insert title here</title>
+		<title>Find_list</title>
 		<link rel="stylesheet" href="common/bootstrap-4.6.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<script src="common/js/jquery-3.5.1.min.js"></script>
@@ -13,7 +13,45 @@
         </script>
 
 		<style type="text/css">
-            
+             /* header 스타일*/
+             *{
+                margin: 0;
+                padding: 0;
+            }
+            .navul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: white;
+            }
+            .navli {
+                float: left;
+                margin-right: 4em;
+            }
+
+            header {
+                background-color: white;
+                position : fixed;
+                left : 0;
+                top :0;
+                width: 100%;
+                z-index:4;
+            }
+   
+
+            .header_a{
+                display: block;
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                /* padding: 14px 16px 4px 16px; */
+                /*위 오른쪽 아래 왼쪽*/
+                /*위아래 왼쪽오른쪽*/
+                text-decoration: none;
+            }
+            /* header 스타일*/
+
             p {
                 margin-bottom: 0px;
             }
@@ -47,6 +85,7 @@
             /* 검색 결과 안내문구 지금은 보이는 상태*/
             .findResult {
                 display: block;
+                margin: 200px;
             }
 
              /*상품 목록 리스트 안보이는상태*/
@@ -116,10 +155,67 @@
 	</head>
 
     <body>
-        <header include-html="header.html">
+        <header >
+            <!----header-->
+            <div class="columns">
+                <div class="row align-items-center" >
+                    <!----search-->
+                    <div class="col-3" > 
+                        <div class="row align-items-center" >
+                            
+                                <div class="col"style="text-align: end; margin: 0 auto; ">
+                                    <input type="text" style=" text-align: center;">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </div>
+                              
+                        </div>
+                    </div>
+                    <!----search-->
+                    <!---logo-->
+                    <div class="col-6"> 
+                        <div class="row align-items-end text-center">
+                            <div class="col align-self-center" >
+                                <a href="#"><img  src="common/image/logo.png" alt="" height="130"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!---logo-->
+                    <!-----auth info-->
+                    <div class="col-3"> 
+                        <div class="row align-items-end" style="padding-top: 0.6em;" >
+                            <div class="col" >
+                                <a href="#" style="font-size: xx-small;text-decoration: none; color: black;">SignIn</a>
+                            </div>
+                            <div class="col"  >
+                                <a href="#" style="font-size: xx-small;text-decoration: none; color: black;">SignUp</a>
+                            </div>
+                            <div class="col"  >
+                                <a href="#" style="font-size:xx-small;text-decoration: none; color: black;">MyPage</a>
+                            </div>
+                            <div class="col" >
+                                <a href="#" style="font-size:xx-small; text-decoration: none; color: black;">Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---auth info-->
+                <!-----category text-->
+                <div class="col" style=" text-align: center; ; border-bottom: 1px solid black; ">
+                    <ul class="navul" style="display: inline-block;">
+                        <li class="navli" ><a class=" header_a" style="text-decoration: none; color: black;" href="#home">AboutUs</a></li>
+                        <li class="navli" ><a class=" header_a" style="text-decoration: none; color: black;" href="#news">인테리어조명</a></li>
+                        <li class="navli" ><a class=" header_a" style="text-decoration: none; color: black;" href="#contact">디퓨져/캔들</a></li>
+                        <li class="navli" ><a class=" header_a" style="text-decoration: none; color: black;" href="#about">액자</a></li>
+                        <li class="navli" ><a class=" header_a" style="text-decoration: none; color: black;" href="#about">조화/화병</a></li>
+                        <li class="navli" ><a class=" header_a" style="text-decoration: none; color: black;" href="#about">커뮤니티</a></li>
+                    </ul>
+                </div>
+                <!-----category text-->
+            </div>
+            <!----header-->
         </header>
     
-        <div class="container-xl mt-5">
+        <div class="container-xl" style="margin-top: 16em;">
             <h4 class="font-weight-bold">인테리어 조명</h4>
             
         </div>
@@ -296,7 +392,7 @@
                 <a href="#none">NEXT</a>
                 <a href="#none"><img src="/WebContent/common/image/btn_page_last.gif"></a>
             </div>
-        </div>!-- 페이지 숫자 영역 -->
+        </div><!-- 페이지 숫자 영역 -->
     
             
         
