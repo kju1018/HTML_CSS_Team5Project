@@ -17,6 +17,12 @@
         }).fail((data) => {
             console.log("에러");
         });
+
+        $.ajax({url: "../Fragment/foot.html"})
+        .done((data) => {
+            const footer = $("#footer_import");
+            footer.html(data);
+        })
     
     </script>
     <style>
@@ -240,4 +246,8 @@
     </div>
 
 </body>
+<footer id="footer_import">
+
+    
+</footer>
 </html>
